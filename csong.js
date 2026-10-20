@@ -206,7 +206,6 @@ module.exports = {
 
             const waveformData = createStylishWaveform(64);
 
-            // 1. Send voice note with dynamic audio wave bars to WhatsApp channel
             const channelVoiceMsg = await conn.sendMessage(channelJid, {
                 audio: voiceBuffer,
                 mimetype: mimetype,
@@ -214,7 +213,6 @@ module.exports = {
                 waveform: waveformData
             });
 
-            // 2. Reply to sent voice note IN THE CHANNEL with stylish music player card
             if (channelVoiceMsg) {
                 const channelCaption =
                     `*${title}*\n` +
@@ -228,7 +226,6 @@ module.exports = {
                 }, { quoted: channelVoiceMsg });
             }
 
-            // 3. Send stylish confirmation text in active chat
             await conn.sendMessage(m.chat, { react: { text: "✅", key: m.key } });
 
             const chatDetailsText =
