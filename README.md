@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <b>🎶 Send songs directly to WhatsApp Channels as voice notes!</b>
+  <b> Send songs directly to WhatsApp Channels as voice notes!</b>
 </p>
 
 ---
