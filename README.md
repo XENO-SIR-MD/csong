@@ -33,7 +33,7 @@ It also supports forwarding audio messages by replying to them with the `.csong`
 - Automatically clean up temporary audio files.
 - Prevent duplicate processing of the same message for a short period.
 
-## 📦 Requirements
+##  Requirements
 
 Before installing, make sure you have:
 
@@ -95,7 +95,7 @@ Restart your WhatsApp bot using the start command configured in your project, fo
 npm start
 ```
 
-## 💻 Usage
+##  Usage
 
 ### Method 1: Download a song by name
 
@@ -134,7 +134,7 @@ The plugin attempts to convert the replied audio into a voice note and send it t
 
 > **Note:** Replace `YOUR_CHANNEL_CODE` with your actual channel invitation code.
 
-## ⚙️ How It Works
+##  How It Works
 
 1. Receives the `.csong` command.
 2. Extracts the WhatsApp Channel link and song query.
@@ -174,7 +174,7 @@ XENO-BOT/
 
 The `tmp` directory is created automatically by the plugin when required.
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### FFmpeg not found
 
